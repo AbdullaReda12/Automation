@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]">
+  <parameter name="browser" value="firefox"/>
+  <test name="Regression Test(failed)">
+    <classes>
+      <class name="test.LoginTest">
+        <methods>
+          <include name="UserCanNotLoginWithvalidUsernameAndValidPswd"/>
+          <include name="ScreenShotOnFailure"/>
+          <include name="UserCanNotLoginWithInvalidUsernameAndValidPswd"/>
+          <include name="tearDownClass"/>
+          <include name="UserCanNotLoginwithValidUsernameandinvalidPswd"/>
+          <include name="CloseDriver"/>
+          <include name="UserCanNotLoginWithInvalidUsernameAndinValidPswd"/>
+          <include name="StartDriver"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+      <class name="test.CatalogForUnAuthusers">
+        <methods>
+          <include name="ScreenShotOnFailure"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- test.CatalogForUnAuthusers -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

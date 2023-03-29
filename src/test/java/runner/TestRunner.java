@@ -1,0 +1,10 @@
+package runner;
+
+import io.cucumber.testng.CucumberOptions;
+import test.TestBase;
+
+@CucumberOptions(features="/src/test/java/Feature",glue= {"steps"},plugin={"pretty","html:target/cucumber-html-report"})
+public class TestRunner extends TestBase{
+
+	
+}
